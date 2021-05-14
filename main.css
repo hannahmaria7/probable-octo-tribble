@@ -32,7 +32,6 @@ body {
 .v1517_132 {
   width: 224px;
   height: 290px;
-  background: url("../images/v1517_132.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -192,7 +191,6 @@ body {
 .v1703_875 {
   width: 280px;
   height: 29px;
-  background: url("../images/v1703_875.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -217,7 +215,6 @@ body {
 .v1703_897 {
   width: 280px;
   height: 29px;
-  background: url("../images/v1703_897.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -242,7 +239,6 @@ body {
 .v1703_919 {
   width: 280px;
   height: 29px;
-  background: url("../images/v1703_919.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -267,7 +263,6 @@ body {
 .v1703_941 {
   width: 280px;
   height: 29px;
-  background: url("../images/v1703_941.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -363,41 +358,149 @@ a:hover {
 .round {
   border-radius: 50%;
 }
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  text-align: center;
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
 }
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
 }
-.rating > *:hover,
-.rating > *:hover ~ span,
-.rating:not(:hover) > input:checked ~ span {
-  color: transparent;
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:38px;
+    color:#ccc;
 }
-.rating > *:hover:before,
-.rating > *:hover ~ span:before,
-.rating:not(:hover) > input:checked ~ span:before {
-   content: "\2605";
-   position: absolute;
-   left: 0; 
-   color: gold;
+.rate:not(:checked) > label:before {
+    content: '\2605';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
 
-.rating > input {
-   margin-left:-1.1em;
-   margin-right:0;
-   top:3px;
-   width:1.1em;
-   height:1.1em;
-   position:relative;
-   z-index:2;
-   opacity:0;
+.ratea {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.ratea:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.ratea:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:38px;
+    color:#ccc;
+}
+.ratea:not(:checked) > label:before {
+    content: '\2605';
+}
+.ratea > input:checked ~ label {
+    color: #ffc700;    
+}
+.ratea:not(:checked) > label:hover,
+.ratea:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.ratea > input:checked + label:hover,
+.ratea > input:checked + label:hover ~ label,
+.ratea > input:checked ~ label:hover,
+.ratea > input:checked ~ label:hover ~ label,
+.ratea > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
 
+.rateb {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rateb:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rateb:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:38px;
+    color:#ccc;
+}
+.rateb:not(:checked) > label:before {
+    content: '\2605';
+}
+.rateb > input:checked ~ label {
+    color: #ffc700;    
+}
+.rateb:not(:checked) > label:hover,
+.rateb:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rateb > input:checked + label:hover,
+.rateb > input:checked + label:hover ~ label,
+.rateb > input:checked ~ label:hover,
+.rateb > input:checked ~ label:hover ~ label,
+.rateb > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.ratec {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.ratec:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.ratec:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:38px;
+    color:#ccc;
+}
+.ratec:not(:checked) > label:before {
+    content: '\2605';
+}
+.ratec > input:checked ~ label {
+    color: #ffc700;    
+}
+.ratec:not(:checked) > label:hover,
+.ratec:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.ratec > input:checked + label:hover,
+.ratec > input:checked + label:hover ~ label,
+.ratec > input:checked ~ label:hover,
+.ratec > input:checked ~ label:hover ~ label,
+.ratec > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
 .v1700_1023 {
   width: 360px;
   height: 640px;
@@ -423,7 +526,6 @@ a:hover {
 .v1700_1043 {
   width: 280px;
   height: 200px;
-  background: url("../images/v1700_1043.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -448,7 +550,6 @@ a:hover {
 .v1708_1 {
   width: 181px;
   height: 48px;
-  background: url("../images/v1708_1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -476,7 +577,6 @@ a:hover {
 .v1708_4 {
   width: 181px;
   height: 48px;
-  background: url("../images/v1708_4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -504,7 +604,6 @@ a:hover {
 .v1708_8 {
   width: 181px;
   height: 48px;
-  background: url("../images/v1708_8.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -532,7 +631,6 @@ a:hover {
 .v1708_10 {
   width: 181px;
   height: 48px;
-  background: url("../images/v1708_10.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
