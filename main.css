@@ -7,7 +7,7 @@ body {
 }
 
 .v1517_130 {
-  width: 360px;
+  width: 100%;
   height: 640px;
   background: rgba(240,141,122,1);
   opacity: 1;
@@ -15,9 +15,23 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  float:left;
+  
+}
+.v2 {
+  width: 100%;
+  height: 640px;
+  background: rgba(240,141,122,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 500px;
+  overflow: hidden;
+  text-align:center;
+
 }
 .v1517_131 {
-  width: 224px;
+  width: 100%;
   height: 465px;
   background: url("https://drive.google.com/thumbnail?id=1Q1bMbji9CXYAF_Ox_eAUMAQHXqZNIIvB");
   background-repeat: no-repeat;
@@ -30,7 +44,7 @@ body {
   overflow: hidden;
 }
 .v1517_132 {
-  width: 224px;
+  width: 100%;
   height: 290px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,7 +56,7 @@ body {
   overflow: hidden;
 }
 .v1517_154 {
-  width: 111px;
+  width: 224px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 0px;
@@ -51,10 +65,10 @@ body {
   font-weight: Bold;
   font-size: 30px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 .v1517_155 {
-  width: 218px;
+  width: 100%;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 448px;
@@ -63,30 +77,31 @@ body {
   font-weight: Light;
   font-size: 12px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 
 
-.page {
-  width: 360px;
-  height: 640px;
-  background: rgba(240,141,122,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.bottom {
-  width: 304px;
-  height: 82px;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 522px;
-  left: 28px;
+  .page {
+    width: 100%;
+    height: 640px;
+    background: rgba(240,141,122,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align:center;
+  }
+  .bottom {
+    width: 100%;
+    height: 82px;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 522px;
+    left: 28px;
 }
 .startholder {
-  width: 304px;
+  width: 500px;
   height: 51px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -94,7 +109,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 250px;
   overflow: hidden;
 }
 .start {
@@ -104,7 +119,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 250px;
   border-top-left-radius: 38px;
   border-top-right-radius: 38px;
   border-bottom-left-radius: 38px;
@@ -123,32 +138,36 @@ body {
   text-align: center;
 }
 .nameholder {
-  width: 304px;
+  width: 100%;
   height: 60px;
   opacity: 1;
   position: absolute;
   top: 307px;
-  left: 26px;
+ 
   overflow: hidden;
+  background-position: center center;
 }
 .nameinput {
-  width: 304px;
+  width: 75%;
   height: 60px;
   background: rgba(255,255,255,1);
-  position: absolute;
+  position: relative;
   border: none;
+  left: 50%;
   border-radius:38px;
   font-family: Poppins;
   font-weight: SemiBold;
   font-size: 14px;
+  text-align: center;
+  transform: translate(-50%,0%);
+  
 }
 .passwordholder {
-  width: 304px;
+  width: 100%;
   height: 60px;
   opacity: 1;
   position: absolute;
   top: 377px;
-  left: 26px;
   border: none;
   overflow: hidden;
 }
@@ -163,6 +182,7 @@ body {
   top: 57px;
   left: 45px;
   overflow: hidden;
+  text-align: center;
 }
 
 
@@ -177,7 +197,7 @@ body {
   overflow: hidden;
 }
 .v1703_874 {
-  width: 280px;
+  width: 100%;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 112px;
