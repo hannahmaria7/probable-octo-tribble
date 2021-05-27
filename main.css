@@ -5,7 +5,94 @@
 body {
   font-size: 14px;
 }
+.v1920_300 {
+  width: 100%;
+  height: 640px;
+  background: rgba(240, 141, 122, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
 
+.v1920_301 {
+  width: 502px;
+  height: 77px;
+  background: rgba(196, 196, 196, 1);
+  opacity: 1;
+  position: absolute;
+  top: 110px;
+  left: 389px;
+  overflow: hidden;
+}
+
+.v1920_302 {
+  width: 212px;
+  height: 46px;
+ 
+  opacity: 1;
+  position: absolute;
+  top: 245px;
+  left: 534px;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.v1920_308 {
+  width: 382px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 126px;
+  left: 449px;
+  font-family: Inter;
+  font-weight: Extra Light;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.v1920_309 {
+  width: 100%;
+  height: 51px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 312px;
+  overflow: hidden;
+}
+
+.v1920_310 {
+  width: 278px;
+  height: 100%;
+  padding: 16px 32px;
+  opacity: 1;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.v1920_311 {
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
 .nameinput {
   width: 212px;
   height: 50px;
