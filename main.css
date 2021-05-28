@@ -812,13 +812,16 @@ body {
 }
 .firststars {
   width: 80%;
-  height: 26px;
-  background: rgba(255,255,255,1);
+  height: 40px;
   opacity: 1;
   position: absolute;
-  top: 102px;
+  top: 95px;
   left: 10%;
   overflow: hidden;
+  font-family: Inter;
+  font-weight: Extra Light;
+  font-size: 30px;
+  text-align:center;
 }
 .name1 {
   width: 60%;
@@ -831,6 +834,7 @@ body {
   font-family: Inter;
   font-weight: Extra Light;
   font-size: 30px;
+  text-align:center;
 }
 .id1 {
   width: 25%;
@@ -843,17 +847,20 @@ body {
 }
 .secondstars {
   width: 80%;
-  height: 29px;
-  background: rgba(255,255,255,1);
+  height: 40px;
   opacity: 1;
   position: absolute;
   top: 155px;
   left: 10%;
   overflow: hidden;
+  font-family: Inter;
+  font-weight: Extra Light;
+  font-size: 30px;
+  text-align:center;
 }
 .firsttitle {
   width: 100px;
-  height: 20px;
+  height: 25px;
   opacity: 1;
   position: absolute;
   top: 80px;
@@ -865,10 +872,10 @@ body {
 }
 .secondtitle {
   width: 100px;
-  height: 20px;
+  height: 25px;
   opacity: 1;
   position: absolute;
-  top: 133px;
+  top: 140px;
   left: 10%;
   overflow: hidden;
   font-family: Inter;
