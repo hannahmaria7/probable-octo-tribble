@@ -9,7 +9,7 @@ body {
 
 .v1920_300 {
   width: 100%;
-  height: 100%;
+  height: 100px;
   background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: relative;
