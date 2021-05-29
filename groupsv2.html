@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet" />
+    <title>Get your group</title>
+  </head>
+
+  <body>
+    <div id='find' class="v1920_300" style='diplay:block'>
+      <div class='v1517_131'></div>
+      <span class="v1920_308">Find your teammates!</span>
+      
+      <span class="v1920_399">Type your nickname to find your teammates!
+      <br></br>
+      <br></br>
+      <br></br>
+      <hr NOSHADE="noshade">
+  
+      </span>
+      <input id='nickname' class="v1920_302" type='text' placeholder='Enter your nickname!'>
+      <div class="v1920_309">
+        <button class="v1920_310" onclick=displayMyGroup()>Find my Team
+        </button>
+      </div>
+    </div>
+
+
+    <div id='video' class="v1920_304" style='display:none'>
+      <img class='gif' src="https://drive.google.com/uc?export=view&id=1hF6lb5-xYleTDt-6A4ZJDrYH-92ebvi2" alt="this slowpoke moves" />
+
+    </div>
+
+    <div id='group' class="v1920_304" style='display:none'>
+      <div class="person1">
+        <div class="id1">
+          <div class="photo1"></div>
+        </div>
+        <div class="name1" id="n1"></div>
+        <div class="firststars" id='s11'></div>
+        <div class="secondtitle" id='t12'></div>
+        <div class="secondstars" id='s12'></div>
+        <div class="firsttitle" id='t11'></div>
+      </div>
+
+
+      <div class="person2">
+        <div class="id1">
+          <div class="photo2"></div>
+        </div>
+        <div class="name1" id='n2'></div>
+        <div class="firststars" id='s21'></div>
+        <div class="secondtitle" id='t22'></div>
+        <div class="secondstars" id='s22'></div>
+        <div class="firsttitle" id='t21'></div>
+      </div>
+
+      <div class="person3">
+        <div class="id1">
+          <div class="photo3"></div>
+        </div>
+        <div class="name1" id='n3'></div>
+        <div class="firststars" id='s31'></div>
+        <div class="secondtitle" id='t32'></div>
+        <div class="secondstars" id='s32'></div>
+        <div class="firsttitle" id='t31'></div>
+      </div>
+
+
+      <div class="person4">
+        <div class="id1">
+          <div class="photo4"></div>
+        </div>
+        <div class="name1" id='n4'></div>
+        <div class="firststars" id='s41'></div>
+        <div class="secondtitle" id='t42'></div>
+        <div class="secondstars" id='s42'></div>
+        <div class="firsttitle" id='t41'></div>
+      </div>
+
+
+    </div>
+  </body>
+
+</html>
+<script>
+  //Link to the example sheet is here: https://docs.google.com/spreadsheets/d/1xo6dUfcVOwPA5Lkd8pKevLj6lP-0gOaPXNBZk4jyuGw/edit#gid=0
+//Sheet id is: 1xo6dUfcVOwPA5Lkd8pKevLj6lP-0gOaPXNBZk4jyuGw
+//Worksheet is: od6 but can also be the #gid. Example: http://screencast.com/t/Ebvd7Pa8G
+//Make sure your spreadsheet is published: File>Publish to Web
+//Below, 'largeimage' and 'imagetitle' are the names of headers in the Sheet.
+//https://docs.google.com/spreadsheets/d/1L2m98ZGL22EuYONxV-ts3qLYrWEP3-KiSP3lbxnbOAI/edit#gid=1993507527
+
+var url = "https://spreadsheets.google.com/feeds/list/1L2m98ZGL22EuYONxV-ts3qLYrWEP3-KiSP3lbxnbOAI/4/public/values?alt\u003djson";
+var line = [];
+
+
+$.getJSON(url, function(data) {
+    var output = "";
+    var i = 0;
+    $.each(data.feed.entry, function(index,value) {
+    	line[i]=[value.gsx$groupn.$t, value.gsx$nicknames.$t, value.gsx$hobbychosen.$t, value.gsx$hobbyranked.$t, value.gsx$ability.$t, value.gsx$abilitylevel.$t];
+      i+=1;
+    });
+});
+
+function displayMyGroup(){
+	var  me = document.getElementById("nickname").value;
+  document.getElementById('find').style ='display:none';
+  document.getElementById('video').style ='display:block';
+  setTimeout(function(){
+         document.getElementById("video").style="display:none";
+         document.getElementById('group').style ='display:block';
+  },3500);
+  
+  
+  groupnumber=getGp(me);
+  pers1 = line[(groupnumber-1)*4];
+  pers2 = line[(groupnumber-1)*4+1];
+  pers3 = line[(groupnumber-1)*4+2];
+  pers4 = line[(groupnumber-1)*4+3];
+  document.getElementById('n1').innerHTML = pers1[1];
+  document.getElementById('n2').innerHTML = pers2[1];
+  document.getElementById('n3').innerHTML = pers3[1];
+  document.getElementById('n4').innerHTML = pers4[1];
+  document.getElementById('t11').innerHTML = pers1[2];
+  document.getElementById('t21').innerHTML = pers2[2];
+  document.getElementById('t31').innerHTML = pers3[2];
+  document.getElementById('t41').innerHTML = pers4[2];
+  document.getElementById('t12').innerHTML = pers1[4];
+  document.getElementById('t22').innerHTML = pers2[4];
+  document.getElementById('t32').innerHTML = pers3[4];
+  document.getElementById('t42').innerHTML = pers4[4];
+  document.getElementById('s11').innerHTML = pers1[3];
+  document.getElementById('s21').innerHTML = pers2[3];
+  document.getElementById('s31').innerHTML = pers3[3];
+  document.getElementById('s41').innerHTML = pers4[3];
+  document.getElementById('s12').innerHTML = pers1[5];
+  document.getElementById('s22').innerHTML = pers2[5];
+  document.getElementById('s32').innerHTML = pers3[5];
+  document.getElementById('s42').innerHTML = pers4[5];
+  //("Meet your group!<br></br>" + pers1[1] +"<br></br>"+ pers2[1]+ "<br></br>"+pers3[1] +"<br></br>"+ pers4[1] +"<br></br>");
+  //document.getElementById('hobby').innerHTML = ('You all really enjoy ' + pers1[2]);
+}
+
+function getGp(me){
+	for(i = 0; i<line.length; i++){
+  	if (line[i][1] == me){
+    	return line[i][0]
+    }
+  }
+}
+
+
+
+</script>
