@@ -108,7 +108,7 @@ body {
   border-bottom-right-radius: 100px;
   overflow: hidden;
   color: rgba(240, 141, 122, 1);
-  background-color: #E2E2E2;
+  background-color: rgba(247,228,225,1);
   font-family: Poppins;
   font-size: 14px;
   border: none;
@@ -309,13 +309,30 @@ body {
 .startplayholder {
   width: 100%;
   height: 50px;
-  background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: absolute;
   top: 870px;
   left: 50%;
   transform: translate(-50%,0);;
   overflow: hidden;
+}
+
+.play {
+  width: 177px;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  color: rgba(247,228,225,1);
+  background-color: rgba(240, 141, 122, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  border: none;
 }
 
 .v1920_337 {
