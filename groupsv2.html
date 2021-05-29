@@ -4,7 +4,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="./mainv2.css" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
     <title>Get your group</title>
   </head>
 
@@ -13,13 +13,14 @@
       <div class='v1517_131'></div>
       <span class="v1920_308">Find your teammates!</span>
       
-      <span class="v1920_399">Type your nickname to find your teammates!
-      <br></br>
-      <br></br>
-      <br></br>
-      <hr NOSHADE="noshade">
-  
+      <span class="v1920_399">
       </span>
+      
+      <div class='v1920'>
+      <hr NOSHADE="noshade">
+      </div>
+            
+      
       <input id='nickname' class="v1920_302" type='text' placeholder='Enter your nickname!'>
       <div class="v1920_309">
         <button class="v1920_310" onclick=displayMyGroup()>Find my Team
@@ -34,6 +35,11 @@
     </div>
 
     <div id='group' class="v1920_304" style='display:none'>
+    
+      <div class='yourteam'>
+        <span class='team'>Your team</span>
+        
+      </div>
       <div class="person1">
         <div class="id1">
           <div class="photo1"></div>
@@ -43,6 +49,7 @@
         <div class="secondtitle" id='t12'></div>
         <div class="secondstars" id='s12'></div>
         <div class="firsttitle" id='t11'></div>
+        <div class='agetxt' id='a1'></div>
       </div>
 
 
@@ -55,6 +62,7 @@
         <div class="secondtitle" id='t22'></div>
         <div class="secondstars" id='s22'></div>
         <div class="firsttitle" id='t21'></div>
+        <div class='agetxt' id='a2'></div>
       </div>
 
       <div class="person3">
@@ -66,6 +74,7 @@
         <div class="secondtitle" id='t32'></div>
         <div class="secondstars" id='s32'></div>
         <div class="firsttitle" id='t31'></div>
+        <div class='agetxt' id='a3'></div>
       </div>
 
 
@@ -78,6 +87,12 @@
         <div class="secondtitle" id='t42'></div>
         <div class="secondstars" id='s42'></div>
         <div class="firsttitle" id='t41'></div>
+        <div class='agetxt' id='a4'></div>
+      </div>
+      
+      
+      <div class='startplayholder'>
+      
       </div>
 
 
@@ -86,14 +101,7 @@
 
 </html>
 <script>
-  //Link to the example sheet is here: https://docs.google.com/spreadsheets/d/1xo6dUfcVOwPA5Lkd8pKevLj6lP-0gOaPXNBZk4jyuGw/edit#gid=0
-//Sheet id is: 1xo6dUfcVOwPA5Lkd8pKevLj6lP-0gOaPXNBZk4jyuGw
-//Worksheet is: od6 but can also be the #gid. Example: http://screencast.com/t/Ebvd7Pa8G
-//Make sure your spreadsheet is published: File>Publish to Web
-//Below, 'largeimage' and 'imagetitle' are the names of headers in the Sheet.
-//https://docs.google.com/spreadsheets/d/1L2m98ZGL22EuYONxV-ts3qLYrWEP3-KiSP3lbxnbOAI/edit#gid=1993507527
-
-var url = "https://spreadsheets.google.com/feeds/list/1L2m98ZGL22EuYONxV-ts3qLYrWEP3-KiSP3lbxnbOAI/4/public/values?alt\u003djson";
+	var url = "https://spreadsheets.google.com/feeds/list/1L2m98ZGL22EuYONxV-ts3qLYrWEP3-KiSP3lbxnbOAI/4/public/values?alt\u003djson";
 var line = [];
 
 
@@ -101,7 +109,7 @@ $.getJSON(url, function(data) {
     var output = "";
     var i = 0;
     $.each(data.feed.entry, function(index,value) {
-    	line[i]=[value.gsx$groupn.$t, value.gsx$nicknames.$t, value.gsx$hobbychosen.$t, value.gsx$hobbyranked.$t, value.gsx$ability.$t, value.gsx$abilitylevel.$t];
+    	line[i]=[value.gsx$groupn.$t, value.gsx$nicknames.$t, value.gsx$hobbychosen.$t, value.gsx$hobbyranked.$t, value.gsx$ability.$t, value.gsx$abilitylevel.$t, value.gsx$age.$t];
       i+=1;
     });
 });
@@ -141,8 +149,10 @@ function displayMyGroup(){
   document.getElementById('s22').innerHTML = pers2[5];
   document.getElementById('s32').innerHTML = pers3[5];
   document.getElementById('s42').innerHTML = pers4[5];
-  //("Meet your group!<br></br>" + pers1[1] +"<br></br>"+ pers2[1]+ "<br></br>"+pers3[1] +"<br></br>"+ pers4[1] +"<br></br>");
-  //document.getElementById('hobby').innerHTML = ('You all really enjoy ' + pers1[2]);
+  document.getElementById('a1').innerHTML = pers1[6] + ' years old';
+  document.getElementById('a2').innerHTML = pers2[6] + ' years old';
+  document.getElementById('a3').innerHTML = pers3[6] + ' years old';
+  document.getElementById('a4').innerHTML = pers4[6] + ' years old';
 }
 
 function getGp(me){
