@@ -9,7 +9,7 @@ body {
 
 .v1920_300 {
   width: 100%;
-  height: 700px;
+  height: 640px;
   background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: relative;
@@ -34,13 +34,24 @@ body {
   height: 46px;
   opacity: 1;
   position: absolute;
-  top: 66%;
+  top: 58%;
   overflow: hidden;
   transform: translate(-50%,0);
   background-color: rgba(240, 141, 122, 1);
   color: rgba(36, 36,36, 1);
   border: none;
   text-align: center;
+  left: 50%;
+}
+
+.v1920 {
+  width: 40%;
+  opacity: 1;
+  position: absolute;
+  top: 65%;
+  overflow: hidden;
+  transform: translate(-50%,0);
+  border: none;
   left: 50%;
 }
 
@@ -79,7 +90,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: relative;
-  top: 77%;
+  top: 69%;
   overflow: hidden;
   font-family: Poppins;
   font-size: 14px;
@@ -103,14 +114,14 @@ body {
   border: none;
 }
 .v1517_131 {
-  width: 65%;
-  height: 32%;
+  width: 100%;
+  height: 49%;
   background: url("https://drive.google.com/thumbnail?id=1Q1bMbji9CXYAF_Ox_eAUMAQHXqZNIIvB");
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 1;
   position: absolute;
-  top: 14%;
+  top: 3%;
   left: 50%;
   overflow: hidden;
   transform: translate(-50%,0);
@@ -128,36 +139,49 @@ body {
 
 .v1920_304 {
   width: 100%;
-  height: 640px;
-  background: rgba(240,141,122,1);
+  height: 1000px;
+  background: rgba(247,228,225,1);
   opacity: 1;
   position: relative;
   top: 0px;
   left: 0px;
   overflow: hidden;
 }
-.person1 {
-  width: 40%;
-  height: 205px;
-  background: rgba(196,196,196,1);
+
+.yourteam {
+  width: 100%;
+  height: 50px;
   opacity: 1;
   position: absolute;
-  top: 65px;
-  left: 5%;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%,0);;
   overflow: hidden;
 }
+
+.team {
+  color: rgba(36, 36,36, 1);
+  font-family: Poppins;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .firststars {
-  width: 80%;
-  height: 40px;
+  width: 100px;
+  height: 25px;
   opacity: 1;
   position: absolute;
-  top: 95px;
-  left: 10%;
+  top: 80px;
+  left: 60%;
   overflow: hidden;
   font-family: Inter;
   font-weight: Extra Light;
-  font-size: 30px;
-  text-align:center;
+  font-size: 18px;
 }
 .name1 {
   width: 60%;
@@ -165,34 +189,33 @@ body {
   opacity: 1;
   position: absolute;
   top: 18px;
-  left: 87px;
+  left: 30%;
   overflow: hidden;
   font-family: Inter;
-  font-weight: Extra Light;
-  font-size: 30px;
-  text-align:center;
+  font-size: 20px;
+  text-align:left;
 }
+
 .id1 {
-  width: 25%;
-  height: 30%;
+  width: 150px;
+  height: 150px;
   opacity: 1;
   position: absolute;
-  top: 9px;
-  left: 15px;
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 .secondstars {
-  width: 80%;
-  height: 40px;
+ width: 100px;
+  height: 25px;
   opacity: 1;
   position: absolute;
-  top: 155px;
-  left: 10%;
+  top: 105px;
+  left: 60%;
   overflow: hidden;
   font-family: Inter;
   font-weight: Extra Light;
-  font-size: 30px;
-  text-align:center;
+  font-size: 18px;
 }
 .firsttitle {
   width: 100px;
@@ -200,56 +223,98 @@ body {
   opacity: 1;
   position: absolute;
   top: 80px;
-  left: 10%;
+  left: 30%;
   overflow: hidden;
   font-family: Inter;
   font-weight: Extra Light;
-  font-size: 20px;
+  font-size: 18px;
 }
+
+.agetxt {
+  width: 100px;
+  height: 25px;
+  opacity: 1;
+  position: absolute;
+  top: 55px;
+  left: 30%;
+  overflow: hidden;
+  font-family: Inter;
+  font-weight: Extra Light;
+  font-size: 18px;
+}
+
 .secondtitle {
   width: 100px;
   height: 25px;
   opacity: 1;
   position: absolute;
-  top: 140px;
-  left: 10%;
+  top: 105px;
+  left: 30%;
   overflow: hidden;
   font-family: Inter;
   font-weight: Extra Light;
-  font-size: 20px;
+  font-size: 18px;
 }
-.person2 {
-  width: 40%;
-  height: 205px;
-  background: rgba(196,196,196,1);
+
+.person1 {
+  width: 80%;
+  height: 150px;
+  background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: absolute;
-  top: 65px;
-  right: 5%;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%,0);
+  overflow: hidden;
+}
+
+.person2 {
+  width: 80%;
+  height: 150px;
+  background: rgba(240, 141, 122, 1);
+  opacity: 1;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%,0);
   overflow: hidden;
 }
 
 
 .person3 {
-  width: 40%;
-  height: 205px;
-  background: rgba(196,196,196,1);
+  width: 80%;
+  height: 150px;
+  background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: absolute;
-  top: 347px;
-  left: 5%;
+  top: 510px;
+  left: 50%;
+  transform: translate(-50%,0);
   overflow: hidden;
 }
 
 
 .person4 {
-  width: 40%;
-  height: 205px;
-  background: rgba(196,196,196,1);
+  width: 80%;
+  height: 150px;
+  background: rgba(240, 141, 122, 1);
   opacity: 1;
   position: absolute;
-  top: 347px;
-  right: 5%;
+  top: 690px;
+  left: 50%;
+  transform: translate(-50%,0);;
+  overflow: hidden;
+}
+
+.startplayholder {
+  width: 100%;
+  height: 50px;
+  background: rgba(240, 141, 122, 1);
+  opacity: 1;
+  position: absolute;
+  top: 870px;
+  left: 50%;
+  transform: translate(-50%,0);;
   overflow: hidden;
 }
 
@@ -274,21 +339,23 @@ body {
   overflow: hidden;
 }
 .photo1 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   background: url("https://drive.google.com/thumbnail?id=1zYIiuRSE7BG4qmqxe_ZbXcxolb65I7rh");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
   opacity: 1;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
+  border-radius: 50%;
 }
 .photo2 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   background: url("https://drive.google.com/thumbnail?id=1qIzjW8gG-7vzS3PE5twMJcfY7eBCq4v1");
   background-repeat: no-repeat;
   background-position: center center;
@@ -300,8 +367,8 @@ body {
   overflow: hidden;
 }
 .photo3 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   background: url("https://drive.google.com/thumbnail?id=11m-Ko9_zG7I-oqRY5cXW880GUBzQR7My");
   background-repeat: no-repeat;
   background-position: center center;
@@ -313,8 +380,8 @@ body {
   overflow: hidden;
 }
 .photo4 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   background: url("https://drive.google.com/thumbnail?id=181PIHIPQOhKzB1gKdmld_0PXekQOKPUs");
   background-repeat: no-repeat;
   background-position: center center;
