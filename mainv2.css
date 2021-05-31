@@ -311,7 +311,7 @@ body {
   position: absolute;
   top: 690px;
   left: 50%;
-  transform: translate(-50%,0);;
+  transform: translate(-50%,0);
   overflow: hidden;
   border: solid;
   border-color: rgba(240, 141, 122,1);
