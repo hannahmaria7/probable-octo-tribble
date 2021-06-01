@@ -163,7 +163,7 @@ function displayMyGroup(){
 
 function getGp(me){
 	for(i = 0; i<line.length; i++){
-  	if ((line[i][1] == me) && (me!='')){
+  	if (line[i][1] == me) {
     	return line[i][0]
     } else {
     	document.getElementById('errormsg').style='display:block';
