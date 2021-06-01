@@ -38,6 +38,7 @@
     
       <div class='yourteam'>
         <span class='team'>Your team</span>
+	      <div  id='errormsg' style='display:none'><br> <br>Hum, it seems like your has not been sorted yet or there is a typo in your nickname. We will sort new groups in a couple minutes, check it out in a few! </div>
         
       </div>
       <div class="person1">
@@ -129,7 +130,6 @@ function displayMyGroup(){
          document.getElementById('group').style ='display:block';
   },3500);
   
-  
   groupnumber=getGp(me);
   pers1 = line[(groupnumber-1)*4];
   pers2 = line[(groupnumber-1)*4+1];
@@ -165,6 +165,8 @@ function getGp(me){
 	for(i = 0; i<line.length; i++){
   	if (line[i][1] == me){
     	return line[i][0]
+    } else {
+    	document.getElementById('errormsg').style='display:block';
     }
   }
 }
